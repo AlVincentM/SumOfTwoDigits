@@ -5,9 +5,9 @@ num1 db 5
 num2 db 4
 
 segment .text
-	global asm_main
+	global _asm_main
 
-asm_main:
+_asm_main:
 enter 0,0
 pusha
 mov eax, 0
