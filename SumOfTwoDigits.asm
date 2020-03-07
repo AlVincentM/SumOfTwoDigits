@@ -10,10 +10,9 @@ segment .text
 _asm_main:
 enter 0,0
 pusha
-mov eax, 0
-add eax, num1
-add eax, num2
-int 21h
+mov eax, 4 	; give eax a value of 4
+add eax, 5	; add 5 to eax ex. 4 + 5
+call print_int ; print the value of eax. 9
 popa
 mov eax,0
 leave
