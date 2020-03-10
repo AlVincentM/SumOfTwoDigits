@@ -38,10 +38,12 @@ call print_nl
 
 mov eax, divMsg
 call print_string
+mov edx, 0
 mov eax, 5
-idiv eax, 1
-;call print_int
-;call print_nl
+mov ecx, 5
+div ecx
+call print_int
+call print_nl
 
 popa
 mov eax,0
